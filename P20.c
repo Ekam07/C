@@ -1,12 +1,14 @@
 //WAp to find 2's complement of a binary number
 #include<stdio.h>
+#include<string.h>
 void main()
 {
-   char b[9],b1[9],b2[10];
+   char b[32],b1[32],b2[32];
    int i,c=1;
    printf("enter any 8 digit binary number: ");
    gets(b);
-   for(i=0;i<8;i++)
+   int l=strlen(b);
+   for(i=0;i<l;i++)
    {
       if(b[i]=='1')
       {
@@ -16,9 +18,9 @@ void main()
       {
          b1[i]='1';
       }
-      b1[8]='\0';
+      b1[l]='\0';
    }
-  for(i=7; i>=0; i--)
+  for(i=l-1; i>=0; i--)
   {
      if(b1[i] =='1' && c==1)
      {
@@ -34,7 +36,7 @@ void main()
         b2[i]=b1[i];
      }
   }
-  b2[8]='\0';
+  b2[l]='\0';
   printf("one's complement of binary number will be:");
   puts(b1);
   printf("two's complement of binary number will be:");
