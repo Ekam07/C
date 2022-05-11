@@ -1,9 +1,10 @@
 //WAP to find 1's complement of a binary number
 #include<stdio.h>
+#include<string.h>
 void main()
 {
    int i;
-   char b[8],b1[8];
+   char b[32],b1[32];
    printf("enter any 8 digit binary number: ");
    gets(b);
    int l=strlen(b);
