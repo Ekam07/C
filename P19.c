@@ -4,7 +4,7 @@
 void main()
 {
    int i;
-   char b[32],b1[32];
+   char b[32],c[32];
    printf("enter any 8 digit binary number: ");
    gets(b);
    int l=strlen(b);
@@ -13,13 +13,13 @@ void main()
    {
       if(b[i]=='1')
       {
-         b1[i]='0';
+         c[i]='0';
       }
       else if(b[i]=='0')
       {
-         b1[i]='1';
+         c[i]='1';
       }
-      b1[l]='\0';
+      c[l]='\0';
    }
-  puts(b1);
+  puts(c);
 }
