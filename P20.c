@@ -3,7 +3,7 @@
 #include<string.h>
 void main()
 {
-   char b[32],b1[32],b2[32];
+   char b[50],b1[50],b2[50];
    int i,c=1;
    printf("enter any 8 digit binary number: ");
    gets(b);
